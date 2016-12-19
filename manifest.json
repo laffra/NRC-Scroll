@@ -1,0 +1,24 @@
+{
+  "name": "NRC Scroll",
+  "short_name": "NRC Scroll",
+  "description": "NRC Scroll maakt NRC Handelsblad leesbaarder.",
+  "version": "1.4",
+  "permissions": [ "activeTab", "storage" ],
+  "author": "Chris Laffra - laffra@gmail.com",
+  "content_scripts" : [
+    {
+      "matches" : [
+          "https://digitaleeditie.nrc.nl/*",
+          "http://digitaleeditie.nrc.nl/*"
+      ],
+      "js" : [ "jquery.js", "contentscript.js" ],
+      "all_frames" : true
+    }
+  ], 
+  "background": { "scripts": ["background.js"] },
+  "page_action": {
+    "default_icon": { "38": "NRC-scroll.png" },
+    "default_title": "NRC Scroll"
+  },
+  "manifest_version": 2
+}
