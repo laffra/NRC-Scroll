@@ -2,7 +2,7 @@
   "name": "NRC Scroll",
   "short_name": "NRC Scroll",
   "description": "NRC Scroll maakt NRC Handelsblad leesbaarder.",
-  "version": "1.4",
+  "version": "1.9",
   "permissions": [ "activeTab", "storage" ],
   "author": "Chris Laffra - laffra@gmail.com",
   "content_scripts" : [
